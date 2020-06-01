@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>pavan lab7</title>
+
+
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+
+</head>
+
+<body>
+
+  <div class="login-card">
+    <h1>Log-in</h1><br>
+  <form>
+    <input type="text" id="user" placeholder="Username">
+    <input type="password" id="pass" placeholder="Password">
+    <input type="submit" id="login" class="login login-submit" value="login">
+  </form>
+
+<script src="/js/main.js"></script>
+</div>
+
+
+
+  
+
+  <script>
+    if('serviceWorker' in navigator)
+    {
+      try
+      {
+        navigator.serviceWorker.register('/sw.js')
+        .then(registration => 
+        {
+            console.log('service worker registered');
+        })
+      }
+      catch (err)
+      {
+          console.log(err)
+      } 
+    }
+
+  </script>
+<script src="/js/main.js"></script>
+</body>
+
+</html>
